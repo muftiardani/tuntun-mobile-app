@@ -1,6 +1,5 @@
 package com.project.tuntun.presentation.onboarding
 
-import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -29,7 +28,6 @@ import com.project.tuntun.presentation.onboarding.components.OnBoardingPageIndic
 import com.project.tuntun.presentation.onboarding.model.pagesList
 import kotlinx.coroutines.launch
 
-@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun OnBoardingScreen(
     event: (OnBoardingEvent) -> Unit
