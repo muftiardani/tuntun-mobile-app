@@ -3,7 +3,6 @@ package com.project.tuntun.presentation.onboarding
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.project.tuntun.domain.usecases.userconfig.UserConfigUseCases
-import com.project.tuntun.presentation.onboarding.OnBoardingEvent
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
