@@ -1,4 +1,12 @@
 package com.project.tuntun.domain.manager.objectDetection
 
-class ObjectDetectionManager {
+import android.graphics.Bitmap
+import com.project.tuntun.domain.model.Detection
+
+interface ObjectDetectionManager {
+    fun detectObjectsInCurrentFrame(
+        bitmap: Bitmap,
+        rotation: Int,
+        confidenceThreshold: Float
+    ): List<Detection>
 }

@@ -1,4 +1,12 @@
 package com.project.tuntun.domain.usecases.userconfig
 
-class WriteUserConfig {
+import com.project.tuntun.domain.manager.datastore.LocalUserConfigManager
+
+class WriteUserConfig(
+    private val userConfigManager: LocalUserConfigManager
+) {
+
+    suspend operator fun invoke() {
+        userConfigManager.writeUserConfig()
+    }
 }

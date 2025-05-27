@@ -1,4 +1,6 @@
 package com.project.tuntun.domain.usecases.userconfig
 
-class UserConfigUseCases {
-}
+data class UserConfigUseCases(
+    val readUserConfig: ReadUserConfig,
+    val writeUserConfig: WriteUserConfig
+)

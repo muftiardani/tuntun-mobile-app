@@ -1,4 +1,5 @@
 package com.project.tuntun.presentation.onboarding
 
-class OnBoardingEvent {
+sealed class OnBoardingEvent {
+    object WriteUserConfigToDataStore: OnBoardingEvent()
 }

@@ -1,4 +1,8 @@
 package com.project.tuntun
 
-class TuntunApplication {
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class TuntunApplication: Application() {
 }

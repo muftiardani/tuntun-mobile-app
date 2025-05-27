@@ -1,4 +1,8 @@
 package com.project.tuntun.domain.manager.datastore
 
-class LocalUserConfigManager {
+import kotlinx.coroutines.flow.Flow
+
+interface LocalUserConfigManager {
+    suspend fun writeUserConfig()
+    fun readUserConfig(): Flow<Boolean>
 }
